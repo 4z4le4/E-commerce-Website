@@ -1,8 +1,11 @@
-# Project01-Group01
-E-commerce full-stack web app (React.js + Java Spring Boot + MySQL). In the React app, when working with React lifecycle, I have used Redux to manage states and 
-variables from the Spring app. I utilized Axios to handle APIs and React-Bootstrap to handle the UI. On the Spring app side, I have already built it based on the MVC 
+# Project01-Group14
+
+E-commerce full-stack web app (React.js + Java Spring Boot + MySQL). In the React app, when working with React lifecycle, I have used Redux to manage states and
+variables from the Spring app. I utilized Axios to handle APIs and React-Bootstrap to handle the UI. On the Spring app side, I have already built it based on the MVC
 model and used Spring Data JPA for CRUD operations with entities.
+
 ## Installation
+
 To run this project locally, follow these steps:
 
 1. Clone the repository: `git clone [repository URL]`
@@ -33,8 +36,3 @@ If you would like to contribute to this project, follow these steps:
 3. Make your changes and commit them: `git commit -am 'Add new feature'`
 4. Push to the branch: `git push origin new-feature`
 5. Submit a pull request
-
-
-## Contact
-
-https://www.linkedin.com/in/l%C3%AA-ho%C3%A0ng-25777122a/
