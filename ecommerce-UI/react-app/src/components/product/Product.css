@@ -1,0 +1,230 @@
+.category-pick button {
+  background-color: #F7F7F7;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 0.2s ease-in-out;
+  transform-origin: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  outline: none;
+}
+
+.category-pick button:hover {
+  background-color: #fd8f5f;
+  color: #F7F7F7;
+  transform: scale(1.05) rotate(5deg);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category-pick button:focus {
+  outline: none;
+  background-color: #fd8f5f;
+  color: #F7F7F7;
+  transform: scale(1.05) rotate(5deg);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category-pick button:active {
+  background-color: #F7F7F7;
+  color: #333;
+  transform: scale(0.95) rotate(0deg);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+.category-pick button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-45deg) scale(0);
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+
+.category-pick button:hover:before {
+  transform: rotate(-45deg) scale(1);
+}
+
+
+
+
+  .products .card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .products .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .products .card .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .products .card .card-body {
+    padding: 1rem;
+  }
+  
+  .products .card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .products .card .card-text{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .desc-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px; 
+  }
+  
+  .products .card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #670000;
+   
+    display: block;
+  }
+  button.add-to-cart {
+    background-color: #fd8f5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button.add-to-cart:hover {
+    background-color: #f2672e;
+  }
+  
+  button.add-to-cart:focus {
+    outline: none;
+  }
+  
+  button.add-to-cart:active {
+    background-color: #fd8f5f;
+    transform: scale(0.95);
+  }
+  /* Styles for screens smaller than 576px (e.g. smartphones) */
+@media (max-width: 576px) {
+  .category-pick button {
+    font-size: 12px;
+    padding: 3px;
+    margin: 5px 0;
+  }
+  .products .card {
+    margin-bottom: 10px;
+  }
+  .products .card .card-img-top {
+    height: 150px;
+  }
+  .products-container{
+    margin: 5px;
+  }
+}
+
+/* Styles for screens between 576px and 768px (e.g. small tablets) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .category-pick button {
+    font-size: 14px;
+    padding: 4px;
+    margin: 7px 0;
+  }
+  .products .card {
+    margin-bottom: 15px;
+  }
+}
+
+/* CSS animation for showProduct */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
+.carts tr{
+  animation: fadeIn 1s ease-in-out;
+}
+@media (max-width: 576px) {
+  .category-pick button {
+    font-size: 12px;
+    padding: 3px;
+    margin: 5px 0;
+  }
+  .products .card {
+    margin-bottom: 10px;
+  }
+  .products .card .card-img-top {
+    height: 150px;
+  }
+} 
+/* Styles for screens larger than 768px (e.g. desktops) */
+@media (min-width: 768px) {
+  .category-pick button {
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px 0;
+  }
+  .products .card {
+    margin-bottom: 20px;
+  }
+}
+.find-product {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: none;
+  position: relative;
+ 
+}
+
+
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.product-show{
+  animation: slideIn 0.5s ease-in-out;
+  transition: all 0.3s ease;
+}
+

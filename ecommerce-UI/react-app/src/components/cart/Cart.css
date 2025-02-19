@@ -1,0 +1,92 @@
+.carts-layout {
+  width: 80vw;
+  padding: 50px 35px 50px;
+  margin: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ 
+  overflow-x: scroll;
+}
+.carts td,
+.carts th {
+  text-align: center;
+  border-top: 1px solid #dee2e6;
+  vertical-align: middle;
+ 
+}
+.carts th{
+  text-transform: capitalize;
+}
+.carts {
+  min-width: 1158.8px;
+}
+.rm-product {
+  background-color: transparent;
+  color: red;
+  border: none;
+  transition: 0.5s;
+}
+.rm-product:hover,
+.inc-mount:hover,
+.dcr-mount:hover {
+  transform: translateY(-5px);
+}
+.clear-carts {
+  margin-top: 10px;
+  width: 180px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #dc3545;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  padding: 10px;
+}
+.clear-carts:hover,.check-out:hover {
+  transform: scale(0.8);
+}
+.check-out {
+  margin-top: 10px;
+  width: 180px;
+  border: 0;
+  border-radius: 50px;
+  background-color: green;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+  display: inline-block;
+}
+button.clear-carts,
+button.check-out {
+  margin-right: 10px;
+}
+
+.d-flex.justify-content-end > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.notification {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.notification::before {
+  content: "\f06a";
+  font-family: FontAwesome;
+  font-size: 20px;
+  color: #721c24;
+  margin-right: 5px;
+}
+
+.notification a {
+  color: #721c24;
+  font-weight: bold;
+  text-decoration: underline;
+}

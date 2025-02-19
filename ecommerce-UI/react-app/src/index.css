@@ -1,0 +1,164 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+body{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.cart{
+    position: relative;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.custom-button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #fd8f5f;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.btn-hv-danger:hover{
+color: red;
+}
+/* .custom-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  opacity: 0;
+  transition: width 0.2s ease-out, height 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.custom-button:hover::before {
+  width: 200%;
+  height: 200%;
+  opacity: 1;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out, opacity 0.2s ease-out;
+} */
+
+.custom-button:hover {
+  animation: pulse 1s ease-in-out infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, -10px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(0, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes color-change {
+  from {
+    color: #fd8f5f;
+  }
+  to {
+    color: #fd8e5f09;
+  }
+}
+
+hr.my-hr {
+  border: none;
+  height: 2px;
+  background-color: #fd8f5f;
+  animation-name: slide-in;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  
+}
+.carousel-control-prev,
+ .carousel-control-next {
+    display: none;
+   }
+@keyframes slide-in {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.pagination {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination .page-link {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0 5px;
+  color: #333;
+  background-color: #e5e5e5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.pagination .page-link:hover {
+  background-color: #d2d2d2;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #fd8f5f;
+  color: #fff;
+}
+
+.pagination .page-link.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination .page-link.disabled:hover {
+  background-color: #e5e5e5;
+}

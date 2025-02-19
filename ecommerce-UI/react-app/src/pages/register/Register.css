@@ -1,0 +1,7 @@
+.register-page .form-login{
+    height: 80vh;
+    overflow: auto ;
+}
+.form-login h1{
+    text-align: center;
+}

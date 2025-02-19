@@ -1,0 +1,47 @@
+.modal-product .modal-dialog {
+  max-width: 1200px !important;
+}
+.modal-product-1 .modal-dialog {
+  max-width: 800px !important;
+}
+.modal-product-1 .modal-content {
+  width: 100% !important;
+  max-width: 800px !important;
+}
+.modal-product .modal-content {
+  width: 100% !important;
+  max-width: 1200px !important;
+}
+.my-detail-card{
+  min-height: 290px;
+}
+@media (max-width: 520px) {
+  .my-detail-card{
+    min-height: 350px;
+  }
+}
+@media (max-width: 568px) {
+  .my-detail-card{
+    min-height: 400px;
+  }
+}
+@media (max-width: 620px) {
+  .my-detail-card{
+    min-height: 450px;
+  }
+}
+@media (max-width: 700px) {
+  .my-detail-card{
+    min-height: 450px;
+  }
+}
+@media (max-width: 767.9px) {
+  .my-detail-card{
+    min-height: 550px;
+  }
+}
+@media (max-width: 1200px) {
+  .my-detail-card{
+    min-height: 350px;
+  }
+}

@@ -1,0 +1,63 @@
+.order-layout {
+    width: 80vw;
+    padding: 50px 35px 50px;
+    margin: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* width: 1228.8px; */
+    overflow-x: scroll;
+  }
+  .carts {
+    min-width: 1050px;
+  }
+
+  .orderinfo-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .orderinfo-form .form-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .orderinfo-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .orderinfo-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .orderinfo-form .form-control:read-only {
+    background-color: #f2f2f2;
+  }
+  
+  .orderinfo-form .form-control::-webkit-inner-spin-button,
+  .orderinfo-form .form-control::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .orderinfo-form .form-control[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  .orderinfo-form .form-control::-webkit-input-placeholder {
+    color: #a0a0a0;
+  }
+  
+  .orderinfo-form .form-control:-moz-placeholder {
+    color: #a0a0a0;
+  }
+  
+  .orderinfo-form .form-control::-moz-placeholder {
+    color: #a0a0a0;
+  }
+  
+  .orderinfo-form .form-control:-ms-input-placeholder {
+    color: #a0a0a0;
+  }

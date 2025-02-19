@@ -1,0 +1,41 @@
+.nav-home-top {
+  background-color: #f2e1d9 !important;
+}
+.logo-custom {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.hover-link {
+  font-weight: 700 !important;
+  color: black;
+}
+.hover-link:hover {
+  color: #fd8f5f !important;
+}
+.nav-link.active {
+  color: #fd8f5f !important;
+}
+.logo-custom {
+  animation: rotate 10s linear infinite;
+}
+
+
+.count-cart{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    background: #fd8f5f;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 22px;
+    display: inline-block;
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+    position: absolute;
+    right: 5px;
+    bottom: -5px;
+}
+
+ 
